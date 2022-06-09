@@ -1,0 +1,10 @@
+@import "./App.scss";
+@import "./Images.scss";
+
+$body-color: pink;
+$bg-color: #353535;
+
+body {
+  color: $body-color;
+  background-color: $bg-color;
+}

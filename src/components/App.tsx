@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
+import Images from "./Images";
 
 export default function App(): JSX.Element {
   const colors = ["red", "yellow", "orange", "pink", "green"];
@@ -12,12 +13,11 @@ export default function App(): JSX.Element {
     setColor(getRandomColor());
   };
   return (
-    <div>
-      <label htmlFor="input" style={{ fontSize: 44, color: "rosybrown" }}>
-        Check if working!
-      </label>
+    <div className="app">
+      <label htmlFor="input">Check if working!</label>
       <input id="input" type="text" value={text} onChange={handleChange} />
-      <p style={{ fontSize: 34, color }}>{text}</p>
+      <p style={{ color }}>{text}</p>
+      <Images />
     </div>
   );
 }
